@@ -17,6 +17,6 @@ public class BookResource {
     @Produces(MediaType.TEXT_PLAIN)
     public Response getBooks() {
 
-        return Response.ok(bookRepository.findAll()).build();
+        return Response.ok(bookRepository.listAll()).build();
     }
 }
